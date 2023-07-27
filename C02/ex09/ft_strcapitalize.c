@@ -29,10 +29,10 @@ char	*ft_strcapitalize(char *str)
 {
 	int	i;
 
-	i = -1;
+	i = 0;
 	if (is_lowercase(str[0]))
 		str[0] = str[0] - 32;
-	while (str[++i] != '\0')
+	while (str[i++] != '\0')
 	{
 		if (!is_alphanumeric(str[i]) && is_lowercase(str[i + 1]))
 			str[i + 1] = str[i + 1] - 32;
@@ -45,7 +45,7 @@ char	*ft_strcapitalize(char *str)
 #include <stdio.h>
 int main()
 {
-	char s[] ="seL12m  alEYGUgum";
+	char s[] ="seLa m  ALAEYGUgum";
 	ft_strcapitalize(s);
 	printf("%s", s);
 	return (0);
