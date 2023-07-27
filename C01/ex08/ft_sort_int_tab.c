@@ -34,7 +34,7 @@ void	ft_sort_int_tab(int *tab, int size)
 #include <stdio.h>
 int main(void)
 {
-	int tab[] = {1, 7, 5, 2, 4, 6};
+	int tab[] = {1, 7, 5, 2, 4, 6, 4};
 
 	int i;
 	int size;
@@ -42,7 +42,7 @@ int main(void)
 	size = 6;
 	i = 0;
 	ft_sort_int_tab(tab, size);
-	while (i != 6)
+	while (i != size)
 	{
 		printf("%d ", tab[i]);
 		i++;
