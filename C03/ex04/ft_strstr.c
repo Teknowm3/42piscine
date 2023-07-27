@@ -23,9 +23,9 @@ char	*ft_strstr(char *str, char *to_find)
 		j = 0;
 		while (to_find[j] == str[i + j])
 		{
-			if (to_find[i + j + 1] == '\0')
+			if (to_find[j + 1] == '\0')
 			{
-				return (&str[i + j]);
+				return (&str[i]);
 			}
 			j++;
 		}
