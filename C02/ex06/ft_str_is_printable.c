@@ -13,14 +13,18 @@
 int	ft_str_is_printable(char *str)
 {
 	int	i;
+	int	j;
 
+	j = 0;
 	i = 0;
 	while (str[i] != '\0')
 	{
-		if (str[i] <= '32' && str[i] <= '126')
-			return (1);
-		else
-			return (0);
+		if (str[i] > '32' && str[i] > '126')
+			j = 1;
 		i++;
 	}
+	if (j = 1)
+		return (0);
+	else
+		return (1);
 }
